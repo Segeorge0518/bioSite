@@ -1,7 +1,7 @@
 /* Universal Styles */
 
 /* CSS clear */
-body, header, nav, main, footer, img, h1, h3, ul, p {
+* {
   margin: 0;
   padding: 0;
   border: 0;
@@ -98,23 +98,53 @@ body {
   padding: 1em;
 }
 
-img {
+.one img {
   max-width: 100%;
   display: block;
-  border: 3px solid black;
+  border: 3px solid #29313f;
   border-radius: 5%;
+}
+
+.four img {
+  max-width: 100%;
+  display: block;
+  border: 3px solid #29313f;
+  border-radius: 5%;
+}
+
+#hobbyP {
+  background-color: #d4deef;
+  margin: 3em;
+  padding: 1em;   
+  border-radius: 15px;
+  font-size: 16px;
+}
+
+figure {
+  border: 4px solid black;  
+  max-width: 90%;
+  margin: 2% auto;
+}
+
+figure img {
+  width: 100%;
+  border-bottom: 4px solid black;
+}
+
+figcaption {
+  padding: 2%;  
+  text-align: center;
 }
 
 /* Media Query for Tablet Viewport */
 @media screen and (min-width: 600px) {
-  figure {
-    width: 300px;
-  }
   
   .gallery {
     display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 30px;
+    grid-template-columns: auto auto;   
+    max-width: 100%;
+    gap: 1em;
+    margin: 0em 2em 2em 2em;
   }
   
   aside {
@@ -183,16 +213,14 @@ img {
     max-height: 100%;
   }
 
-  figure {
-    width: 300px;
-  }
-  
   /* Hobby Page specific style rules for desktop media query */
   .gallery {
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-gap: 30px;
+    gap: 1em;
+    max-width: 100%;
   }
+
   
   aside {
     grid-column: 1/ span 3;
@@ -217,3 +245,6 @@ footer {
   text-align: center;
 }
 
+main {
+  min-height: calc(100vh - 124.68px - 34px - 50.8px);
+}
