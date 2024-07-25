@@ -1,0 +1,219 @@
+/* Universal Styles */
+
+/* CSS clear */
+body, header, nav, main, footer, img, h1, h3, ul, p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Header bar styling */
+.headbanner {
+  padding: .75em;
+  background-color: rgb(48, 2, 21)
+}
+
+header h1 {
+  text-align: center;
+  font-size: 40px;
+  font-family: Georgia, Times, serif;
+  padding: 3%;
+  color: #d4deef;
+}
+
+/* Navigation bar styling */
+nav {
+  background-color: #29313f;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  font-size: 1em;
+  font-family: Geneva, arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+nav li a {
+  display: block;
+  color: #d4deef;
+  padding: 0.5em 2em;
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(56, 23, 36);
+}
+
+/* Mobile style rules */
+.one {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+  padding: 1em;
+}
+
+.two {
+  background-color: #d4deef;
+  margin: 1em;
+  padding: 2em;
+  border-radius: 5px;
+}
+
+.two h3 {
+  text-align: center;
+  font-size: 35px;
+  padding-bottom: 1em;
+}
+
+.two p {
+  font-size: 18px;
+  margin-bottom: 1em;
+}
+
+.three {
+  background-color: #d4deef;
+  margin: 1em;
+  padding: 2em;
+  border-radius: 5px;
+}
+
+.three p {
+  font-size: 18px; 
+  padding-top: 2em; 
+}
+
+.four {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+  padding: 1em;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border: 3px solid black;
+  border-radius: 5%;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 600px) {
+  figure {
+    width: 300px;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 30px;
+  }
+  
+  aside {
+    grid-column: 1/ span 2;
+    font-size: 2em;
+    text-align: center;
+    color: #d4deef;
+  }
+}
+
+/*Media Query for Desktop Viewport
+*/
+@media screen and (min-width: 1000px) {
+  #gradient {
+    background: linear-gradient(#5a5c5f, rgb(56, 23, 36));
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1em 2em;
+  }
+
+  .break {
+    flex-basis: 100%;
+    padding: 1em;
+  }
+
+  .one {
+    flex-grow: 1;
+    width: 20%;
+  }
+
+  .one img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .two {
+    flex-grow: 1;
+    padding: 1em;
+    width: 50%;
+    background-color: #d4deef;
+    margin-right: 1em;
+    border-radius: 5px;
+  }
+
+  .three {
+    flex-grow: 1;
+    padding: 1em;
+    width: 70%;
+    background-color: #d4deef;
+    margin-left: 1em;
+    border-radius: 5px;
+  }
+
+  .four {
+    flex-grow: 1;
+    padding: 1em;
+    width: 15%;
+  }
+
+  .four img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  figure {
+    width: 300px;
+  }
+  
+  /* Hobby Page specific style rules for desktop media query */
+  .gallery {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+  }
+  
+  aside {
+    grid-column: 1/ span 3;
+    font-size: 2em;
+    text-align: center;
+    color: #d4deef;
+  }
+}
+
+footer {
+  text-align: center;
+  color: #f6eee4;
+  background-color: #29313f;
+  padding:1em;
+}
+
+/* Keeps footer at the bottom of the page
+*/
+.footer {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
