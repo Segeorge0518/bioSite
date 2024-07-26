@@ -17,7 +17,7 @@ header h1 {
   text-align: center;
   font-size: 40px;
   font-family: Georgia, Times, serif;
-  padding: 3%;
+  padding: 20px;
   color: #d4deef;
 }
 
@@ -43,8 +43,8 @@ nav li {
 nav li a {
   display: block;
   color: #d4deef;
-  padding: 0.5em 2em;
-  text-decoration: none;
+  padding: 1em 2em;
+  text-decoration: none;  
 }
 
 body {
@@ -115,25 +115,51 @@ body {
 #hobbyP {
   background-color: #d4deef;
   margin: 3em;
-  padding: 1em;   
+  padding: 2em;   
   border-radius: 15px;
   font-size: 16px;
 }
 
-figure {
-  border: 4px solid black;  
-  max-width: 90%;
+.frame {
+  position: relative;
+  max-width: 400px;
   margin: 2% auto;
 }
 
-figure img {
-  width: 100%;
-  border-bottom: 4px solid black;
+.frame img {
+  max-width: 100%;  
 }
 
-figcaption {
-  padding: 2%;  
+.Captions {  
   text-align: center;
+  background: rgb(90, 92, 95); 
+  color: #d4deef; 
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.abouttxt {
+  background: #5a5c5f;
+  color: #d4deef;
+  text-align: center;
+  padding:2em;
+  margin: 2em;  
+  min-height: 65vh;
+}
+
+.aboutimg img {
+  text-align: center;
+  margin: 2em auto 0px auto; 
+  height: 350px;
+  border-radius: 5%;  
+  display: block;
+  border: 3px solid #29313f;
 }
 
 /* Media Query for Tablet Viewport */
@@ -153,11 +179,31 @@ figcaption {
     text-align: center;
     color: #d4deef;
   }
+
+  .aboutimg img {
+    float: left; 
+    margin: 2em 2em 2em 5em; 
+    height: 350px;
+  }
+
+  .abouttxt {
+    background: #5a5c5f;
+    color: #d4deef;
+    text-align: center;
+    padding:  3.5em 2em 2em 2em;
+    margin: 3em;  
+    min-height: 65vh;
+    border-radius: 6px;
+  }
 }
 
 /*Media Query for Desktop Viewport
 */
 @media screen and (min-width: 1000px) {
+  nav li a:hover {
+    background: #d4deef;
+    color: #29313f;
+  }
   #gradient {
     background: linear-gradient(#5a5c5f, rgb(56, 23, 36));
   }
@@ -227,6 +273,12 @@ figcaption {
     font-size: 2em;
     text-align: center;
     color: #d4deef;
+  }
+
+  .aboutimg img {
+    float: left; 
+    margin: 2em 2em 2em 5em; 
+    height: 350px;
   }
 }
 
